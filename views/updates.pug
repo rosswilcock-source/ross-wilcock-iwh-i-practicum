@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    a(href="/") Return to the homepage
+    h1 Update Custom Object
+
+    form(method="POST", action="/update-cobj")
+      div
+        label(for="name") Name
+        input#name(type="text", name="name", required)
+
+      div
+        label(for="age") Age
+        input#age(type="number", name="age")
+
+      div
+        label(for="character_details") Character details
+        textarea#character_details(name="character_details")
+
+      button(type="submit") Submit

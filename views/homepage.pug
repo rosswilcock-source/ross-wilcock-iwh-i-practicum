@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    a(href="/update-cobj") Add to this table
+    h1 Custom Object Records
+
+    table
+      thead
+        tr
+          th Name
+          th Age
+          th Character details
+      tbody
+        each item in records
+          tr
+            td= item.properties.name
+            td= item.properties.age
+            td= item.properties.character_details
+
